@@ -7,6 +7,7 @@ header {
     grid-column: 1/4;
     background-color: blue;
     color: white;
+    justify-content: center;
 }
 
 .navigation {
@@ -33,7 +34,7 @@ nav a:hover {
 .card {
     background-color: white;
     color: gray;
-    margin: auto;
+    margin: 25px;
     border: 1px solid black;
     border-radius: 25px;
 }
@@ -59,9 +60,9 @@ nav a:hover {
 
 /* .indiana img {
     float: left;
-}
+} */
 
-.indiana p {
+/* .indiana p {
     float: right;
 } */
 
@@ -78,4 +79,5 @@ footer {
     grid-column: 1/4;
     background-color: blue;
     color: white;
+    justify-content: center;
 }
