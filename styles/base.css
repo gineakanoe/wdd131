@@ -10,7 +10,7 @@
 
 header {
     grid-column: 1/4;
-    background-color: blue;
+    background-color: darkblue;
     color: white;
 }
 
@@ -23,7 +23,7 @@ h1 {
     display: flex;
     justify-content: center;
     list-style: none;
-    background: gray;
+    background: rgb(45, 44, 44);
     overflow: hidden;
     margin: auto;
     padding-top: 1.5rem;
@@ -54,7 +54,7 @@ nav a:hover {
 
 .card {
     background-color: white;
-    color: gray;
+    color: black;
     margin: 25px;
     border: 1px solid black;
     border-radius: 25px;
@@ -111,7 +111,7 @@ hr {
 }
 
 h3 {
-    background-color: blue;
+    background-color: darkblue;
     color: white;
     margin: auto;
     border-top-left-radius: 25px;
@@ -121,7 +121,7 @@ h3 {
 
 footer {
     grid-column: 1/4;
-    background-color: blue;
+    background-color: darkblue;
     color: white;
     justify-content: center;
 }
