@@ -12,6 +12,10 @@ header {
     grid-column: 1/4;
     background-color: blue;
     color: white;
+}
+
+h1 {
+    display: flex;
     justify-content: center;
 }
 
@@ -36,6 +40,18 @@ nav a:hover {
     background-color: black;
 }
 
+.column {
+    float: left;
+    width: 73%;
+    padding: 0 10px;
+}
+
+.column2 {
+    float: right;
+    width: 23%;
+    padding: 0 10px;
+}
+
 .card {
     background-color: white;
     color: gray;
@@ -44,32 +60,55 @@ nav a:hover {
     border-radius: 25px;
 }
 
-.one {
+h3 {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.card p {
+    padding: 25px;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* .card .one {
     grid-column: 1/3;
 }
 
-.two {
+.card .two {
     grid-column: 3/4;
+} */
+
+.aboutMe {
+    display: flex;
 }
 
-/* .aboutMe img {
+.aboutMe img {
     float: right;
-} */
+    padding: 25px;
+}
 
-/* .indiana {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-} */
+.indiana {
+    display: flex;
+}
 
-/* .indiana img {
+.indiana img {
     float: left;
-} */
+    padding: 25px;
+}
 
-/* .indiana p {
-    float: right;
-} */
+.indiana figcaption {
+    padding: 25px;
+}
 
 h3 {
     background-color: blue;
@@ -84,5 +123,10 @@ footer {
     grid-column: 1/4;
     background-color: blue;
     color: white;
+    justify-content: center;
+}
+
+footer p {
+    display: flex;
     justify-content: center;
 }
