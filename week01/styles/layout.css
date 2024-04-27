@@ -11,7 +11,7 @@
 
 .navigation {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     list-style: none;
     background: black;
     overflow: hidden;
@@ -23,7 +23,6 @@
 a {
     text-decoration: none;
     color: white;
-    padding: 6rem;
 }
 
 
