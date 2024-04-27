@@ -1,0 +1,81 @@
+.parent {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header {
+    grid-column: 1/4;
+    background-color: blue;
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: gray;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 6rem
+}
+
+nav a:hover {
+    background-color: black;
+}
+
+.card {
+    background-color: white;
+    color: gray;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.one {
+    grid-column: 1/3;
+}
+
+.two {
+    grid-column: 3/4;
+}
+
+/* .aboutMe img {
+    float: right;
+} */
+
+/* .indiana {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+} */
+
+/* .indiana img {
+    float: left;
+}
+
+.indiana p {
+    float: right;
+} */
+
+h3 {
+    background-color: blue;
+    color: white;
+    margin: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    justify-content: center;
+}
+
+footer {
+    grid-column: 1/4;
+    background-color: blue;
+    color: white;
+}
