@@ -40,6 +40,10 @@ nav a:hover {
     background-color: black;
 }
 
+main {
+    max-width: fit-content;
+}
+
 .column {
     float: left;
     width: 73%;
@@ -60,17 +64,22 @@ nav a:hover {
     border-radius: 25px;
 }
 
-h3 {
+h2 {
     display: flex;
     justify-content: center;
     padding: 25px;
+    background-color: darkblue;
+    color: white;
+    margin: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .card p {
     padding: 25px;
 }
 
-h4 {
+h3 {
     display: flex;
     justify-content: center;
 }
@@ -108,15 +117,6 @@ hr {
 
 .indiana figcaption {
     padding: 25px;
-}
-
-h3 {
-    background-color: darkblue;
-    color: white;
-    margin: auto;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    justify-content: center;
 }
 
 footer {
