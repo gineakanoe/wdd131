@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Warp&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header, main, footer {
+    max-width: 1000px;
+    margin: 1rem auto;
+    border: 1px solid black;
+    padding: 25px;
+    background-color: lightblue;
+}
+
+header {
+    display: flex;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+/* .navWrapper:focus-within .navigation {
+    display: block;
+} */
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: right;
+    cursor: pointer;
+    float: right;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.open nav {
+    display: block;
+}
+
+nav {
+    margin: 0 auto;
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 1rem
+}
+
+nav a:hover {
+    border: 1px solid white;
+    background-color: purple;
+    color: white;
+}
+
+.active {
+    color: orangered;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: grid;
+    grid-column: 1.4;       
+    justify-content: center;
+}
