@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+:root {
+    --background-color: darkred;
+    --color: white;
+    --secondary-background-color: lightblue;
+}
 
 body {
     font-family: "Poetsen One", sans-serif;
@@ -7,8 +11,8 @@ body {
 }
 
 header {
-    background-color: darkred;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--color);
     display: grid;
     grid-column: 1/4;
     justify-content: center;
@@ -29,7 +33,7 @@ h2 {
     border: 1px black solid;
     margin: 1rem;
     padding: 1rem;
-    background-color: lightblue;
+    background-color: var(--secondary-background-color);
 }
 
 .weatherimg {
@@ -51,8 +55,8 @@ td {
 }
 
 footer {
-    background-color: darkred;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--color);
     display: grid;
     grid-column: 1/4;
     justify-content: center;
@@ -74,6 +78,10 @@ footer {
         right: 150px;
         bottom: -200px;
         z-index: 1000;
+    }
+
+    .weather::after {
+        display: flex;
     }
 
     .weatherimg {
