@@ -83,6 +83,6 @@ h2 {
 
 footer {
     display: grid;
-    grid-column: 1.4;       
+    grid-column: 1/4;       
     justify-content: center;
 }
