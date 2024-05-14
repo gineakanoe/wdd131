@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+body {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: darkred;
+    color: white;
+    display: grid;
+    grid-column: 1/4;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.data, .weather {
+    border: 1px black solid;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: lightblue;
+}
+
+.weatherimg {
+    display: grid;
+    justify-content: center;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    text-align: right;
+}
+
+td {
+    text-align: left;
+}
+
+footer {
+    background-color: darkred;
+    color: white;
+    display: grid;
+    grid-column: 1/4;
+    justify-content: center;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 640px) {
+    .data {
+        position: absolute;
+        float: left;
+        left: 150px;
+        top: 250px;
+        z-index: 1000;
+    }
+
+    .weather {
+        position: absolute;
+        float: right;
+        right: 150px;
+        bottom: -200px;
+        z-index: 1000;
+    }
+
+    .weatherimg {
+        display: flex;
+    }
+}

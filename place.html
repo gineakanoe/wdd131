@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ginea Merrill">
+    <meta name="description" content="WDD 131 - Dynamic Wed Fundamentals - Ginea Merrill - A website that describes a place's details, like population data, and the weather. ">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/place.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>  
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/Fuji.webp" media="min-width: 501px">
+                <source srcset="images/Hakone.webp" media="max-width: 500px">
+                <img src="images/Fuji.webp" alt="Japan">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <table>
+                <tr><th>Area:</th><td>377,975 sq km</td></tr>
+                <tr><th>Population:</th><td>123,970,000</td></tr>
+                <tr><th>Capital:</th><td>Tokyo</td></tr>
+                <tr><th>Languages:</th><td>Japanese</td></tr>
+                <tr><th>Currency:</th><td>Japanese yen</td></tr>
+                <tr><th>Time Zone:</th><td>UTC+09:00</td></tr>
+                <tr><th>Calling Code:</th><td>+81</td></tr>
+                <tr><th>Internet TLD:</th><td>.jp</td></tr>
+            </table>
+        </div>
+        <div class="weather">
+            <div class="weatherimg">
+                <h2>Weather</h2>
+                <img src="images/sunny.svg" alt="sunny weather" width="50" height="50">
+            </div>
+            <table> 
+                <tr><th>Temperature:</th><td>60°F</td></tr>
+                <tr><th>Conditions:</th><td>Clear</td></tr>
+                <tr><th>Wind:</th><td>1 mph</td></tr>
+                <tr><th>Wind Chill:</th><td id="windchill"></td></tr>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> | Ginea Merrill | Indiana</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
