@@ -1,0 +1,47 @@
+:root {
+    --back: black;
+    --back2: rgb(64, 62, 62);
+    --color: white;
+    --border: black;
+    --zebra: lightgray;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 0.2rem;
+    font-size: smaller;
+}
+
+tr:first-child th {
+    background-color: var(--back);
+    color: var(--color);
+}
+
+th, td {
+    padding: 7px;
+    border: 1px solid var(--border);
+    white-space: pre;
+}
+
+th {
+    background-color: var(--back2);
+    color: var(--color);
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+.blank {
+    background-color: var(--back);
+}
