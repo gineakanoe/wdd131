@@ -91,4 +91,17 @@ const temples = [
     },
 ];
 
+function renderTemples(temples) {
+    const html = temples.map(
+        (temple) => `
+        <h3>${temple.templeName}</h3>
+        <p>Location: ${temple.location}</p>
+        <p>Dedicated: ${temple.dedicated}</p>
+        <p>Size: ${temple.area} sq ft</p>
+        <img loading="lazy" src="${temple.imageUrl}" alt="${temple.templeName}" width="250">
+        `
+    );
+    document.querySelector("#card").innerHTML = html.join("");
+}
 
+renderTemples(temples);
