@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ginea Merrill">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ginea Merrill - a webpage to show images of temples and a hamburger menu option with everything moving dynamically when the page gets smaller vs larger.">
+    <title>WDD 131 - Temples</title>
+    <link rel="stylesheet" type="text/css" href="styles/filtered-temples.css">
+    <link rel="stylesheet" type="text/css" href="styles/filtered-temples-large.css">
+    <script src="scripts/getdates.js" defer></script>   
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <div class="navWrapper">
+            <button id="menu"></button>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" class="active" title="Home">Home</a></li>
+                    <li><a href="#" title="Old">Old</a></li>
+                    <li><a href="#" title="New">New</a></li>
+                    <li><a href="#" title="Large">Large</a></li>
+                    <li><a href="#" title="Small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <div class="card">
+            <h3 class="templeName"></h3>
+            <p class="location"></p>
+            <p class="dedicated"></p>
+            <p class="area"></p>
+            <img class="templeImage" loading="lazy" alt="Temple Image">
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> | Ginea Merrill | Indiana</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
