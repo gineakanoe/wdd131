@@ -32,7 +32,6 @@ main {
     border: 0;
     background: none;
     color: #000;
-    position: right;
     cursor: pointer;
     float: right;
 }
