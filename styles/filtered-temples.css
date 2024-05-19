@@ -72,10 +72,6 @@ nav a:hover {
     color: white;
 }
 
-.active {
-    color: orangered;
-}
-
 h2 {
     display: flex;
     justify-content: center;
