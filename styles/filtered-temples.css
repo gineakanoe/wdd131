@@ -88,7 +88,7 @@ footer {
     justify-items: center;
 }
 
-#card {
+section {
     border: 1px solid black;
     background-color: rgb(234, 236, 238);
     display: grid;
