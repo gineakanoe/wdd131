@@ -94,14 +94,17 @@ const temples = [
 function renderTemples(temples) {
     const html = temples.map(
         (temple) => `
-        <h3>${temple.templeName}</h3>
-        <p>Location: ${temple.location}</p>
-        <p>Dedicated: ${temple.dedicated}</p>
-        <p>Size: ${temple.area} sq ft</p>
-        <img loading="lazy" src="${temple.imageUrl}" alt="${temple.templeName}" width="250">
+        <div id="card">
+            <h3>${temple.templeName}</h3>
+            <p>Location: ${temple.location}</p>
+            <p>Dedicated: ${temple.dedicated}</p>
+            <p>Size: ${temple.area} sq ft</p>
+            <br>
+            <img loading="lazy" src="${temple.imageUrl}" alt="${temple.templeName}" width="250">
+        </div>
         `
     );
-    document.querySelector("#card").innerHTML = html.join("");
+    document.querySelector("#cards").innerHTML = html.join("");
 }
 
 renderTemples(temples);
